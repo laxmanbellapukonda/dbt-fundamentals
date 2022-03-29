@@ -2,4 +2,4 @@ select
 order_id,
 customer_id,
 amount 
-from {{ref('stg_payments')}}
+from {{ref('staging.stripe','stg_payments')}}
